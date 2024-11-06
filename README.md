@@ -20,8 +20,8 @@ By analyzing the logs using regex pattern matching we extract offending entries 
 1. Follow the How to execute a **WIPE SCRIPT Guide** below
 
 
-# How to execute WIPE SCRIPTS (And view / use SQL)
-## BASIC TOP LEVEL FLOW:
+## How to execute WIPE SCRIPTS (And view / use SQL)
+### BASIC TOP LEVEL FLOW:
 1. Back-up DB
 1. Execute Script
 1. Fire Up Server
@@ -31,7 +31,7 @@ By analyzing the logs using regex pattern matching we extract offending entries 
 1. Delete the Mod
 1. Fire Up Your server
 
-## HOW TO EXECUTE:
+### HOW TO EXECUTE:
 1. Download an SQLite manipulation software, I personally use SQLite Studio it's simple and light weight https://sqlitestudio.pl/
 1. Shut down your server
 1. Target your game.db that is located in saved folder of your server. (I personally recommend you make a backup copy also if you're using cloud hosting download the DB to your PC first, do the operations and then swap them out, remember to keep your backup)
