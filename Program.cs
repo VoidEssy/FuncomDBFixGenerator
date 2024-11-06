@@ -13,7 +13,7 @@ namespace FuncomDBFixGenerator
             string fileName = "ConanSandbox.log";
             string outputFileName = "GeneratedSql.sql";
 
-            // Define the regex pattern (for example, capturing any content between specific tags)
+            // Define the regex pattern to match to log entries in ConanSandbox.log
             string pattern = @"\[\d+.\d+.\d+-\d+.\d+.\d+.\d+\].* NameToLoad: (.*)\n.*\n\[\d+.\d+.\d+-\d+.\d+.\d+.\d+\].* String asset reference \""None\"".*slow.";
 
             try
@@ -32,7 +32,7 @@ namespace FuncomDBFixGenerator
 
                 Console.WriteLine($"Searching for pattern '{pattern}' in '{fileName}'...");
 
-                // Use RegexOptions.Singleline to allow '.' to match newline characters
+                // Execute Regex pattern matching on the read contnet
                 MatchCollection matches = Regex.Matches(content, pattern);
 
                 // Write matches to the output file
